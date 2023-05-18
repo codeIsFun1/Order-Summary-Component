@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin: 2rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Red Hat Display";
+      }
+      body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+
+        background-size: contain;
+
+        background-color: hsl(225, 100%, 94%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        /* border:1px solid red; */
+        background-color: #fff;
+        border-radius: 15px;
+        /* width: 20vw;
+      min-width: 25%; */
+        max-width: 350px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+          rgb(209, 213, 219) 0px 0px 0px 1px inset;
+      }
+      .img img {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .jumbo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        margin: 1rem;
+      }
+      .para {
+        width: 80%;
+        padding: 0 15px;
+      }
+      .para p {
+        line-height: 22px;
+        color: rgb(114, 128, 167);
+      }
+      .utility {
+        background-color: hsl(225, 100%, 98%);
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        margin: 2rem;
+        padding: 1rem;
+      }
+
+      .plan {
+        margin-left: 0.1rem;
+        margin-right: 3rem;
+      }
+      .utility a {
+        align-self: center;
+        color: rgb(56, 41, 224);
+        transition: all 0.1s linear;
+      }
+      .utility a:hover {
+        opacity: 0.7;
+        transform: translateY(1px);
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin-bottom: 0.5rem;
+        width: 80%;
+        padding: 0.9rem;
+        border-radius: 10px;
+        color: white;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        background-color: hsl(245, 75%, 52%);
+      }
+      button:hover {
+        opacity: 0.9;
+      }
+      .cancle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .cancle a {
+        color: rgb(114, 128, 167);
+      }
+      .cancle a:hover {
+        color: hsl(223, 47%, 23%);
+      }
+
+      @media (min-width: 375px) {
+        body {
+          background-color: hsl(225, 100%, 94%);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img src="./images/illustration-hero.svg" alt="" />
+      </div>
+      <div class="jumbo">
+        <div class="title">
+          <h1>Order Summary</h1>
+        </div>
+        <div class="para">
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="utility">
+          <img src="./images/icon-music.svg" alt="" />
+          <div class="plan">
+            <h2>Annual Plan</h2>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#">change</a>
+        </div>
+      </div>
+      <div class="btn">
+        <button>Proceed to Payment</button>
+      </div>
+      <div class="cancle">
+        <p><a href="">Cancel Order</a></p>
+      </div>
+    </div>
+    <!-- Order Summary
+
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+
+  Annual Plan
+  $59.99/year
+
+  Change
+
+  Proceed to Payment
+  Cancel Order -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="">Abhishek</a>.
+    </div>
+  </body>
+</html>
